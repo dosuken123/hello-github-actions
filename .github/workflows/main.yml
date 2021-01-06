@@ -8,6 +8,9 @@ jobs:
     steps:
       - run: echo "deployingg"
       - run: echo "PRD_SECRET is $PRD_SECRET"
+      - uses: ./action-a
+        with:
+          MY_NAME: ${{ secrets.PRD_SECRET }}
   my-job:
     name: Hello world action
     runs-on: ubuntu-latest
