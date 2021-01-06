@@ -7,6 +7,7 @@ jobs:
     environment: production
     steps:
       - run: echo "deployingg"
+      - run: echo "PRD_SECRET is $PRD_SECRET"
   my-job:
     name: Hello world action
     runs-on: ubuntu-latest
