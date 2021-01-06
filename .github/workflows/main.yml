@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
+      - uses: actions/checkout@v1
       - run: echo "deployingg"
       - run: echo "PRD_SECRET is $PRD_SECRET"
       - uses: ./action-a
