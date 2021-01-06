@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - run: echo "deploying"
+      - run: echo "deployingg"
   my-job:
     name: Hello world action
     runs-on: ubuntu-latest
