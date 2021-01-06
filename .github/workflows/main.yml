@@ -11,3 +11,7 @@ jobs:
         with:
           MY_NAME: "Michi"
       - run: echo "hoge"
+  print-date:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date -u
